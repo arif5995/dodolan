@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arif.gedor.TambahFotoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/layoutInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@color/biruTransparan"
+                android:orientation="vertical"
+                android:layout_marginTop="45dp"
+                android:padding="10dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/biru"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/navBack"
+            android:layout_marginTop="5dp"
+            android:paddingRight="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back" />
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_layout"
+            android:paddingLeft="15dp"
+            android:paddingRight="50dp"
+            android:paddingVertical="5dp"
+            android:inputType="text"/>
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/iconsearch" />
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/tmbProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tmb_product"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:fabSize="normal" />
+
+
+
+</RelativeLayout>

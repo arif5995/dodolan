@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_activity"
+    tools:context="com.arif.gedor.Login.login_pdgActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layoutInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="300dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/biruTransparan"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Register Pedagang"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Full Name" />
+
+            <EditText
+                android:id="@+id/edtNamaPdg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_person"
+                android:hint="Full Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/edtEmailPdg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_person"
+                android:hint="email"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/edtPasswordPdg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_person"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Confrim Password" />
+
+            <EditText
+                android:id="@+id/edtComfrimPdg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_person"
+                android:hint="confrim password"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Produk" />
+
+            <EditText
+                android:id="@+id/edtProdukPdg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_person"
+                android:hint="Produk" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Telepon" />
+
+            <EditText
+                android:id="@+id/edtTlpnPdg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_person"
+                android:hint="Telepon"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btnRegisterPdg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rec_gradient"
+                android:text="REGISTER"
+                android:textAllCaps="false"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/txtloginPdg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Login" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

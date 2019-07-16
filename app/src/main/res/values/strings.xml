@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">GeDor</string>
+    <string name="title_activity_map_pembeli">Map</string>
+    <string name="title_activity_maps_pedagang">Map</string>
+    <string name="google_direction_api">AIzaSyBe9P-itehQgH5BG7ox5vizpv5E1iGLMhg</string>
+</resources>

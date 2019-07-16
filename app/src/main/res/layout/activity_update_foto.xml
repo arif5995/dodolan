@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arif.gedor.TambahFotoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layoutInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/biruTransparan"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/dodolan_splash"
+                android:layout_gravity="center"
+                app:civ_border_width="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="Update Produk"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Nama Produk" />
+
+            <EditText
+                android:id="@+id/edtNamaProdukUpd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:hint="Nama Produk" />
+
+            <ImageView
+                android:id="@+id/UploadImageUpd"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/button_transparan"
+                android:layout_gravity="center"
+                android:src="@drawable/photo_pedagang"
+                android:scaleType="centerInside"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Harga" />
+
+            <EditText
+                android:id="@+id/edtHargaUpd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:hint="Harga"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Rincian" />
+
+            <ScrollView
+                android:id="@+id/ScrollView01"
+                android:layout_width="match_parent"
+                android:layout_height="150dip">
+
+                <EditText
+                    android:id="@+id/edtRincianUpd"
+                    android:hint="Rincian Produk"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:inputType="text|textMultiLine"
+                    android:gravity="top"/>
+            </ScrollView>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_above="@+id/txtcopyright"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnSimpan"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_sign_in_background"
+                    android:text="SIMPAN"
+                    android:textColor="@color/colorwhite" />
+
+                <Button
+                    android:id="@+id/btnKembali"
+                    android:text="Kembali"
+                    android:background="@drawable/btn_register_background"
+                    android:textColor="@color/btnregister"
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
